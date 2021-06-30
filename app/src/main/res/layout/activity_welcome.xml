@@ -2,15 +2,17 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/amasar3">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="150dp"
         android:text="@string/hola"
         android:textSize="50dp"
+        android:textColor="@color/white"
         android:fontFamily="@font/cocogoose"
         />
 
@@ -21,6 +23,7 @@
         android:layout_marginTop="10dp"
         android:text="@string/registrate"
         android:textSize="20dp"
+        android:textColor="@color/white"
         android:fontFamily="@font/cocogoose"
         />
 
@@ -31,9 +34,11 @@
         android:text="@string/registrateGoogle"
         android:textAllCaps="false"
         android:background="@drawable/bordes_redondos"
+        android:drawableLeft="@drawable/googlelogo"
         android:backgroundTint="@color/white"
         android:layout_marginTop="45dp"
         android:layout_gravity="center_horizontal"
+        android:textColor="@color/gray"
         />
 
     <Button
@@ -42,10 +47,12 @@
         android:layout_height="wrap_content"
         android:text="@string/registratefb"
         android:textAllCaps="false"
+        android:drawableLeft="@drawable/fblogo"
         android:background="@drawable/bordes_redondos"
         android:backgroundTint="@color/white"
         android:layout_marginTop="10dp"
         android:layout_gravity="center_horizontal"
+        android:textColor="@color/gray"
         />
 
 

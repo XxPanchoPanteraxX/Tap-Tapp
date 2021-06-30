@@ -8,8 +8,7 @@
     <string name="registrate">Regístrate con: </string>
     <string name="registratefb">Regístrate con Facebook. </string>
     <string name="registrateGoogle">Regístrate con Google. </string>
-
-
-
+    <string name="seleccionaCuenta">Selecciona una cuenta: </string>
+    <string name="cuenta1">unodos@gmail.com </string>
 
 </resources>

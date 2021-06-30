@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChooseAccountActivity"
+    android:orientation="vertical"
+    android:background="@drawable/amasar3">
+
+
+    <FrameLayout
+        android:layout_width="270dp"
+        android:layout_height="350dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="175dp"
+        android:background="@drawable/bordes_redondos">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/googlelogo"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="35dp"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/cocogoose"
+            android:text="@string/seleccionaCuenta"
+        />
+
+        <Button
+            android:id="@+id/cuentaPrueba"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cuenta1"
+            android:textColor="@color/gray"
+            android:textAllCaps="false"
+            android:fontFamily="sans-serif-light"
+            android:textSize="20sp"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <Button
+            android:id="@+id/cuentaPrueba2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cuenta1"
+            android:textColor="@color/gray"
+            android:textAllCaps="false"
+            android:fontFamily="sans-serif-light"
+            android:textSize="20sp"
+            android:layout_marginTop="190dp"
+            android:layout_marginLeft="10dp"
+            />
+
+
+    </FrameLayout>
+
+
+</LinearLayout>
