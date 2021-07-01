@@ -10,5 +10,12 @@
     <string name="registrateGoogle">Regístrate con Google. </string>
     <string name="seleccionaCuenta">Selecciona una cuenta: </string>
     <string name="cuenta1">unodos@gmail.com </string>
-
+    <string name="principiante">Principiante</string>
+    <string name="ingredientes_fav">Ingredientes favoritos:</string>
+    <string name="recetas_completadas">Recetas completadas:</string>
+    <string name="recetas_subidas">Recetas subidas:</string>
+    <string name="fav">Favoritas:</string>
+    <string name="ayuda">Ayuda</string>
+    <string name="subir_receta">Subir receta</string>
+    <string name="seguidos">Seguidos</string>
 </resources>
