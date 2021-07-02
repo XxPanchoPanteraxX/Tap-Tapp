@@ -40,7 +40,7 @@
                 android:adjustViewBounds="true"
                 android:foreground="@drawable/imagen_ovalada"
                 android:outlineProvider="background"
-                android:scaleType="centerCrop"
+                android:scaleType="fitXY"
                 android:src="@drawable/pizza" />
 
             <ImageView
@@ -155,7 +155,6 @@
                 android:layout_width="250dp"
                 android:layout_gravity="center"
                 android:background="@drawable/gradient"
-                android:backgroundTint="@color/black"
                 android:layout_marginTop="30dp"/>
 
         </LinearLayout>

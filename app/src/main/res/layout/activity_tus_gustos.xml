@@ -190,6 +190,7 @@
         android:drawableRight="@drawable/ic_baseline_play_arrow_24"
         android:fontFamily="sans-serif-black"
         android:text="Listo"
-        android:textColor="@color/white" />
+        android:textColor="@color/white"
+        android:textAllCaps="false"/>
 
 </LinearLayout>
