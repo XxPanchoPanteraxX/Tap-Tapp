@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".TusGustosActivity">
+    tools:context=".TusGustosActivity"
+    android:background="@drawable/fondo">
 
     <TextView
         android:layout_width="match_parent"
