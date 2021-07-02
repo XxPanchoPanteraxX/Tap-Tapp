@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">TapTapp</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_home">Perfil</string>
+    <string name="title_dashboard">Disfruta</string>
+    <string name="title_notifications">Explora</string>
 
     <string name="hola">¡Hola!</string>
     <string name="registrate">Regístrate con: </string>
