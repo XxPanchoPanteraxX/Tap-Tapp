@@ -18,6 +18,8 @@
     <string name="ayuda">Ayuda</string>
     <string name="subir_receta">Subir receta</string>
     <string name="seguidos">Seguidos</string>
-    <string name="tus_gustos">Tu comida <br/>tus gustos</string>
-    <string name="selecciona_Ingredientes">Selecciona los ingredientes con los que <br/> sueles contar, para brindarte la mejor <br/> experiencia</string>
+    <string name="tus_gustos">Tu comida <br />tus gustos</string>
+    <string name="selecciona_Ingredientes">Selecciona los ingredientes con los que <br /> sueles contar, para brindarte la mejor <br /> experiencia</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
