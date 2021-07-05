@@ -32,39 +32,60 @@
                 android:layout_gravity="center"
                 android:background="@drawable/bordes_redondos_verdes" />
 
-            <ImageView
+            <androidx.cardview.widget.CardView
                 android:layout_width="250dp"
                 android:layout_height="100dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="60dp"
-                android:adjustViewBounds="true"
-                android:foreground="@drawable/imagen_ovalada"
-                android:outlineProvider="background"
-                android:scaleType="fitXY"
-                android:src="@drawable/pizza" />
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:elevation="4dp"
+                app:cardCornerRadius="60dp">
 
-            <ImageView
-                android:layout_width="250dp"
-                android:layout_height="100dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="60dp"
-                android:adjustViewBounds="true"
-                android:foreground="@drawable/imagen_ovalada"
-                android:backgroundTint="@color/cremita"
-                android:outlineProvider="background"
-                android:scaleType="centerCrop"
-                android:src="@drawable/brocheta_carne" />
+                <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/pizza" />
+            </androidx.cardview.widget.CardView>
 
-            <ImageView
+            <androidx.cardview.widget.CardView
                 android:layout_width="250dp"
                 android:layout_height="100dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="60dp"
-                android:adjustViewBounds="true"
-                android:foreground="@drawable/imagen_ovalada"
-                android:outlineProvider="background"
-                android:scaleType="centerCrop"
-                android:src="@drawable/pastel" />
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:elevation="4dp"
+                android:layout_marginLeft="30dp"
+                app:cardCornerRadius="60dp">
+
+                <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="100dp"
+                    android:adjustViewBounds="true"
+                    android:backgroundTint="@color/cremita"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/brocheta_carne" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="250dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:elevation="4dp"
+                android:layout_marginLeft="30dp"
+                app:cardCornerRadius="60dp">
+
+                <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/pastel" />
+            </androidx.cardview.widget.CardView>
 
             <TextView
                 android:layout_width="match_parent"
@@ -86,27 +107,41 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="10dp"
                 android:columnCount="4"
                 android:orientation="horizontal">
 
-
-                <ImageButton
+                <androidx.cardview.widget.CardView
                     android:layout_width="150dp"
                     android:layout_height="180dp"
-                    android:layout_marginRight="30dp"
-                    android:src="@drawable/vegetariano"
-                    android:foreground="@drawable/imagen_ovalada_v"/>
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="15dp"
+                    android:elevation="4dp"
+                    app:cardCornerRadius="30dp">
+
+                    <ImageButton
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        android:src="@drawable/vegetariano" />
+                </androidx.cardview.widget.CardView>
 
 
-                <ImageButton
+                <androidx.cardview.widget.CardView
                     android:layout_width="150dp"
                     android:layout_height="180dp"
-                    android:layout_marginLeft="30dp"
-                    android:backgroundTint="@color/cremita"
-                    android:foreground="@drawable/imagen_ovalada_v"
-                    android:src="@drawable/vegano" />
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="30dp"
+                    android:elevation="4dp"
+                    app:cardCornerRadius="30dp">
 
+                    <ImageButton
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        android:backgroundTint="@color/cremita"
+                        android:src="@drawable/vegano" />
+                </androidx.cardview.widget.CardView>
 
             </GridLayout>
 
@@ -125,14 +160,23 @@
                 android:layout_height="5dp"
                 android:layout_gravity="center"
                 android:background="@drawable/bordes_redondos_verdes" />
-            
-            <ImageButton
+
+            <androidx.cardview.widget.CardView
                 android:layout_width="250dp"
                 android:layout_height="150dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="30dp"
-                android:src="@drawable/amasar"
-                android:foreground="@drawable/imagen_ovalada"/>
+                android:elevation="4dp"
+                app:cardCornerRadius="25dp">
+
+                <ImageButton
+                    android:layout_width="250dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bordes_redondos_imagebutton"
+                    android:src="@drawable/amasar" />
+            </androidx.cardview.widget.CardView>
+
 
             <TextView
                 android:layout_width="match_parent"
@@ -151,11 +195,11 @@
                 android:background="@drawable/bordes_redondos_verdes" />
 
             <Button
-                android:layout_height="150dp"
                 android:layout_width="250dp"
+                android:layout_height="150dp"
                 android:layout_gravity="center"
-                android:background="@drawable/gradient"
-                android:layout_marginTop="30dp"/>
+                android:layout_marginTop="30dp"
+                android:background="@drawable/gradient" />
 
         </LinearLayout>
     </ScrollView>
