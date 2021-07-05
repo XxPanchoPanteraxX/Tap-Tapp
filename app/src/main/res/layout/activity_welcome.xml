@@ -11,7 +11,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="150dp"
         android:text="@string/hola"
-        android:textSize="50dp"
+        android:textSize="60dp"
         android:textColor="@color/white"
         android:fontFamily="@font/cocogoose"
         />
@@ -22,7 +22,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:text="@string/registrate"
-        android:textSize="20dp"
+        android:textSize="30dp"
         android:textColor="@color/white"
         android:fontFamily="@font/cocogoose"
         />
@@ -34,11 +34,12 @@
         android:text="@string/registrateGoogle"
         android:textAllCaps="false"
         android:background="@drawable/bordes_redondos"
-        android:drawableLeft="@drawable/googlelogo"
+        android:drawableStart="@drawable/googlelogo"
         android:backgroundTint="@color/white"
         android:layout_marginTop="45dp"
         android:layout_gravity="center_horizontal"
         android:textColor="@color/gray"
+        android:textSize="17dp"
         />
 
     <Button
@@ -47,10 +48,11 @@
         android:layout_height="wrap_content"
         android:text="@string/registratefb"
         android:textAllCaps="false"
-        android:drawableLeft="@drawable/fblogo"
+        android:drawableStart="@drawable/fblogo"
         android:background="@drawable/bordes_redondos"
         android:backgroundTint="@color/white"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="17dp"
         android:layout_gravity="center_horizontal"
         android:textColor="@color/gray"
         />
