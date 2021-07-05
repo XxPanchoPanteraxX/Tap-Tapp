@@ -32,10 +32,17 @@
             android:fontFamily="@font/cocogoose"
             android:text="@string/seleccionaCuenta"
         />
+        <View
+            android:layout_width="185dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="66dp"
+            android:layout_marginLeft="56dp"
+            android:background="@color/gray"
+            />
 
         <Button
             android:id="@+id/cuentaPrueba"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/cuenta1"
             android:textColor="@color/gray"
@@ -43,20 +50,25 @@
             android:fontFamily="sans-serif-light"
             android:textSize="20sp"
             android:layout_marginTop="100dp"
-            android:layout_marginLeft="10dp"
+            />
+
+        <View
+            android:layout_width="200dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="@color/gray"
             />
 
         <Button
             android:id="@+id/cuentaPrueba2"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/cuenta1"
             android:textColor="@color/gray"
             android:textAllCaps="false"
             android:fontFamily="sans-serif-light"
             android:textSize="20sp"
-            android:layout_marginTop="190dp"
-            android:layout_marginLeft="10dp"
+            android:layout_marginTop="200dp"
             />
 
 

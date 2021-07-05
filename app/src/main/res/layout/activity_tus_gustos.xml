@@ -12,11 +12,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:fontFamily="sans-serif-black"
+        android:fontFamily="@font/cocogoose"
         android:text="@string/tus_gustos"
         android:textAlignment="center"
         android:textColor="@color/green"
-        android:textSize="50sp" />
+        android:textSize="45sp" />
 
     <View
         android:layout_width="180dp"
@@ -57,7 +57,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-black"
+                android:fontFamily="@font/cocogoose"
                 android:text="Carne"
                 android:textAlignment="center"
                 android:textColor="@color/green"
@@ -80,7 +80,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-black"
+                android:fontFamily="@font/cocogoose"
                 android:text="Frutas"
                 android:textAlignment="center"
                 android:textColor="@color/green"
@@ -103,7 +103,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-black"
+                android:fontFamily="@font/cocogoose"
                 android:text="Vegetales"
                 android:textAlignment="center"
                 android:textColor="@color/green"
@@ -126,7 +126,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-black"
+                android:fontFamily="@font/cocogoose"
                 android:text="Especias"
                 android:textAlignment="center"
                 android:textColor="@color/green"
@@ -149,7 +149,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-black"
+                android:fontFamily="@font/cocogoose"
                 android:text="Huevos"
                 android:textAlignment="center"
                 android:textColor="@color/green"
@@ -172,7 +172,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-black"
+                android:fontFamily="@font/cocogoose"
                 android:text="Picante"
                 android:textAlignment="center"
                 android:textColor="@color/green"
