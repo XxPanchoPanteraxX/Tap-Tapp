@@ -1,107 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.recetas.fragment_recetas"
+    android:background="@drawable/fondo"
     android:orientation="vertical"
-    android:background="@drawable/fondo">
+    tools:context=".ui.recetas.fragment_recetas">
 
     <androidx.cardview.widget.CardView
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        app:cardCornerRadius="30dp"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="30dp">
 
         <ImageView
             android:layout_width="250dp"
             android:layout_height="100dp"
             android:layout_gravity="center"
-            android:src="@drawable/pizza"
-            android:scaleType="fitXY"/>
+            android:scaleType="fitXY"
+            android:src="@drawable/pizza" />
     </androidx.cardview.widget.CardView>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
         android:text="Pizza clasica"
         android:textColor="@color/greenish"
-        android:textSize="25dp"
-        android:fontFamily="sans-serif-black"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"/>
+        android:textSize="25dp" />
+
     <View
         android:layout_width="200dp"
         android:layout_height="4dp"
-        android:background="@drawable/bordes_redondos_verdes"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:background="@drawable/bordes_redondos_verdes" />
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:background=""
-        >
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center">
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="10dp"
+            android:src="@drawable/icon_pierna"
+            android:background="@drawable/bordes_redondos_imagebutton"
+            android:layout_gravity="center"/>
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="10dp"
+            android:src="@drawable/icon_pimienta"
+            android:background="@drawable/bordes_redondos_imagebutton"
+            android:layout_gravity="center"/>
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="10dp"
+            android:src="@drawable/icon_zanahoria"
+            android:background="@drawable/bordes_redondos_imagebutton"
+            android:layout_gravity="center"/>
 
     </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="100dp"
+        android:fontFamily="sans-serif-black"
         android:text="Paso 1"
-        android:textSize="20sp"
-        android:layout_gravity="center"
         android:textColor="@color/greenish"
-        android:layout_marginTop="30dp"
-        android:layout_marginRight="100dp"
-        android:fontFamily="sans-serif-black"/>
+        android:textSize="20sp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lorem_ipsum"
         android:layout_gravity="center"
         android:layout_marginLeft="50dp"
-        />
+        android:text="@string/lorem_ipsum" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="100dp"
+        android:fontFamily="sans-serif-black"
         android:text="Paso 2"
-        android:textSize="20sp"
-        android:layout_gravity="center"
         android:textColor="@color/greenish"
-        android:layout_marginTop="30dp"
-        android:layout_marginRight="100dp"
-        android:fontFamily="sans-serif-black"/>
+        android:textSize="20sp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lorem_ipsum"
         android:layout_gravity="center"
         android:layout_marginLeft="50dp"
-        />
+        android:text="@string/lorem_ipsum" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Paso 3"
-        android:textSize="20sp"
         android:layout_gravity="center"
-        android:textColor="@color/greenish"
         android:layout_marginTop="30dp"
         android:layout_marginRight="100dp"
-        android:fontFamily="sans-serif-black"/>
+        android:fontFamily="sans-serif-black"
+        android:text="Paso 3"
+        android:textColor="@color/greenish"
+        android:textSize="20sp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lorem_ipsum"
         android:layout_gravity="center"
         android:layout_marginLeft="50dp"
-        />
+        android:text="@string/lorem_ipsum" />
 
 </LinearLayout>

@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TapTapp">
-        <activity android:name=".TusGustosActivity"></activity>
+        <activity android:name=".TusGustosActivity" />
         <activity android:name=".MainActivity" />
         <activity
             android:name=".ChooseAccountActivity"
