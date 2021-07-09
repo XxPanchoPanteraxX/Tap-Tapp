@@ -19,6 +19,7 @@ class ChooseAccountActivity : AppCompatActivity() {
     val RC_SIGN_IN = 123
     val COD_LOGOUT = 323
     lateinit var mGoogleSignInClient: GoogleSignInClient
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_welcome)
@@ -37,8 +38,8 @@ class ChooseAccountActivity : AppCompatActivity() {
         val login_fb = findViewById(R.id.login_fb) as Button
 
         login_google.setOnClickListener {
-            var intent: Intent = Intent(this, TusGustosActivity::class.java)
-            this.startActivityForResult(intent, RC_SIGN_IN)
+            val signInIntent = mGoogleSignInClient.signInIntent
+            startActivityForResult(signInIntent, RC_SIGN_IN)
         }
 
         login_fb.setOnClickListener {
@@ -58,9 +59,6 @@ class ChooseAccountActivity : AppCompatActivity() {
             handleSignInResult(task)
         }
 
-        if (requestCode == COD_LOGOUT) {
-            signOut()
-        }
     }
 
     override fun onStart() {
@@ -100,9 +98,9 @@ class ChooseAccountActivity : AppCompatActivity() {
     private fun updateUI(account: GoogleSignInAccount?) {
         if (account != null) {
             val intent = Intent(this, TusGustosActivity::class.java)
-            intent.putExtra("name", account.displayName)
-            intent.putExtra("email", account.email)
-            startActivityForResult(intent, COD_LOGOUT)
+            //intent.putExtra("name", account.displayName)
+            //intent.putExtra("email", account.email)
+            startActivity(intent)
         }
     }
 }
