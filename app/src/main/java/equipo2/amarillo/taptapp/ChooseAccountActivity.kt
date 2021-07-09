@@ -98,8 +98,8 @@ class ChooseAccountActivity : AppCompatActivity() {
     private fun updateUI(account: GoogleSignInAccount?) {
         if (account != null) {
             val intent = Intent(this, TusGustosActivity::class.java)
-            //intent.putExtra("name", account.displayName)
-            //intent.putExtra("email", account.email)
+            intent.putExtra("name", account.displayName)
+            intent.putExtra("email", account.email)
             startActivity(intent)
         }
     }
