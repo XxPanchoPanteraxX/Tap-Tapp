@@ -13,9 +13,16 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.SignInButton
 import com.google.android.gms.common.api.ApiException
 import com.google.android.gms.tasks.Task
+import com.google.firebase.auth.AuthCredential
+
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.GoogleAuthProvider
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 class ChooseAccountActivity : AppCompatActivity() {
 
+    private lateinit var auth: FirebaseAuth
     val RC_SIGN_IN = 123
     val COD_LOGOUT = 323
     lateinit var mGoogleSignInClient: GoogleSignInClient
@@ -23,6 +30,8 @@ class ChooseAccountActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_welcome)
+
+        auth = Firebase.auth
 
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
             .requestEmail()
@@ -38,12 +47,22 @@ class ChooseAccountActivity : AppCompatActivity() {
         val login_fb = findViewById(R.id.login_fb) as Button
 
         login_google.setOnClickListener {
-            val signInIntent = mGoogleSignInClient.signInIntent
-            startActivityForResult(signInIntent, RC_SIGN_IN)
+
+            // Configuración
+
+            val googleConf = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestIdToken(getString(R.string.default_web_client_id))
+                .requestEmail()
+                .build()
+
+            val googleClient = GoogleSignIn.getClient(this, googleConf)
+           // googleClient.signOut()
+
+            startActivityForResult(googleClient.signInIntent, RC_SIGN_IN)
         }
 
         login_fb.setOnClickListener {
-            var intent: Intent = Intent(this, TusGustosActivity::class.java)
+            val intent: Intent = Intent(this, TusGustosActivity::class.java)
             this.startActivity(intent)
         }
     }
@@ -56,7 +75,26 @@ class ChooseAccountActivity : AppCompatActivity() {
             // The Task returned from this call is always completed, no need to attach
             // a listener.
             val task: Task<GoogleSignInAccount> = GoogleSignIn.getSignedInAccountFromIntent(data)
-            handleSignInResult(task)
+
+            try {
+                val account: GoogleSignInAccount? = task.getResult(ApiException::class.java)
+                val intent: Intent = Intent(this, TusGustosActivity::class.java)
+
+                if (account != null) {
+
+                    val credential:AuthCredential = GoogleAuthProvider.getCredential(account.idToken, null)
+
+                    FirebaseAuth.getInstance().signInWithCredential(credential)
+                        .addOnCompleteListener {
+
+                            if (it.isSuccessful)
+                            this.startActivity(intent)
+                        }
+                }
+
+            }catch (e: ApiException){
+                Toast.makeText(this, "Hubo un error autenticando la cuenta", Toast.LENGTH_SHORT).show()
+            }
         }
 
     }

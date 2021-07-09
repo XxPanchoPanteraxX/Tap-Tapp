@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "848791296504",
+    "project_id": "taptapp-1625851306516",
+    "storage_bucket": "taptapp-1625851306516.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:848791296504:android:6b3a292b0507ffee5a9e0d",
+        "android_client_info": {
+          "package_name": "equipo2.amarillo.taptapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "848791296504-j9hvictvffovkl08t6on51qrh18b3ajj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "equipo2.amarillo.taptapp",
+            "certificate_hash": "543a3aba7d8ce996e6715e36a4eec5598a7b4810"
+          }
+        },
+        {
+          "client_id": "848791296504-2p7tb6tbq2306numeifq276ppp9qss29.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNpHTx-qHjAW3j-6rP4TU4T97RVbTi4Tk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "848791296504-2p7tb6tbq2306numeifq276ppp9qss29.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

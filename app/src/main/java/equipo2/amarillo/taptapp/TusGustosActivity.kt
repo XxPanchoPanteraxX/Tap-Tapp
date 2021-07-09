@@ -16,5 +16,8 @@ class TusGustosActivity : AppCompatActivity() {
             var intent: Intent = Intent(this, MainActivity::class.java)
             this.startActivity(intent)
         }
+
+
+
     }
 }
