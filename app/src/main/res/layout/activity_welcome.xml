@@ -32,19 +32,79 @@
         android:layout_gravity="center"
         android:layout_marginTop="20dp" />
 
-    <Button
-        android:id="@+id/login_fb"
-        android:layout_width="275dp"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
+        android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:background="@drawable/bordes_redondos"
-        android:backgroundTint="@color/white"
-        android:drawableStart="@drawable/fblogo"
-        android:text="@string/registratefb"
-        android:textAllCaps="false"
-        android:textColor="@color/gray"
-        android:textSize="17dp" />
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Login con Firebase"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/usuario"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:hint="Usuario"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/contrasenia"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:hint="Contraseña"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:inputType="textPassword"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/register_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/borde_redondos_naranja"
+                android:fontFamily="sans-serif-black"
+                android:padding="10dp"
+                android:text="Registrarse"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/login_firebase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/borde_redondos_naranja"
+                android:fontFamily="sans-serif-black"
+                android:padding="10dp"
+                android:text="Iniciar Sesión"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    </LinearLayout>
 
 
 </LinearLayout>
