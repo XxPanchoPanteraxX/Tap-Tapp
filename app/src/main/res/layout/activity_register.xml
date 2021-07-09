@@ -146,7 +146,8 @@
             android:fontFamily="@font/cocogoose"
             android:textSize="15sp"
             android:padding="10dp"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white"
+            android:id="@+id/regresar"/>
 
         <Button
             android:layout_width="wrap_content"
@@ -156,7 +157,8 @@
             android:background="@drawable/borde_redondos_naranja"
             android:fontFamily="@font/cocogoose"
             android:padding="10dp"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white"
+            android:id="@+id/registrarse"/>
     </LinearLayout>
 
 </LinearLayout>
