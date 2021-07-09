@@ -3,12 +3,14 @@ package equipo2.amarillo.taptapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.Toast
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
+import com.google.android.gms.common.SignInButton
 import com.google.android.gms.common.api.ApiException
 import com.google.android.gms.tasks.Task
 
@@ -28,7 +30,7 @@ class ChooseAccountActivity : AppCompatActivity() {
         // Build a GoogleSignInClient with the options specified by gso.
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
 
-        val login_google = findViewById(R.id.login_google) as Button
+        var login_google = findViewById<View>(R.id.login_google) as SignInButton
         val login_fb = findViewById(R.id.login_fb) as Button
 
         login_google.setOnClickListener {
