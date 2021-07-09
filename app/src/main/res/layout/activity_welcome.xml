@@ -13,7 +13,7 @@
         android:fontFamily="@font/cocogoose"
         android:text="@string/hola"
         android:textColor="@color/white"
-        android:textSize="60dp" />
+        android:textSize="60sp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -23,7 +23,7 @@
         android:fontFamily="@font/cocogoose"
         android:text="@string/registrate"
         android:textColor="@color/white"
-        android:textSize="30dp" />
+        android:textSize="30sp" />
 
     <com.google.android.gms.common.SignInButton
         android:id="@+id/login_google"
@@ -42,7 +42,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-black"
+            android:fontFamily="@font/cocogoose"
             android:text="Login con Firebase"
             android:textAlignment="center"
             android:textColor="@color/white"
@@ -56,9 +56,9 @@
             android:layout_marginTop="10dp"
             android:background="@color/white"
             android:hint="Usuario"
+            android:inputType="text"
             android:textColor="@color/black"
-            android:textSize="20sp"
-            android:inputType="text"/>
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/contrasenia"
@@ -68,9 +68,9 @@
             android:layout_marginTop="10dp"
             android:background="@color/white"
             android:hint="Contraseña"
+            android:inputType="textPassword"
             android:textColor="@color/black"
-            android:textSize="20sp"
-            android:inputType="textPassword"/>
+            android:textSize="20sp" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -85,7 +85,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
                 android:background="@drawable/borde_redondos_naranja"
-                android:fontFamily="sans-serif-black"
+                android:fontFamily="@font/cocogoose"
                 android:padding="10dp"
                 android:text="Registrarse"
                 android:textColor="@color/white"
@@ -97,7 +97,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:background="@drawable/borde_redondos_naranja"
-                android:fontFamily="sans-serif-black"
+                android:fontFamily="@font/cocogoose"
                 android:padding="10dp"
                 android:text="Iniciar Sesión"
                 android:textColor="@color/white"
