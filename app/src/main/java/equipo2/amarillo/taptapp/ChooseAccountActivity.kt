@@ -8,7 +8,7 @@ import android.widget.Button
 class ChooseAccountActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_choose_account)
+        setContentView(R.layout.activity_welcome)
 
         val login_google = findViewById(R.id.login_google) as Button
         val login_fb = findViewById(R.id.login_fb) as Button
