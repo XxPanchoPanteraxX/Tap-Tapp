@@ -22,6 +22,14 @@
     <string name="selecciona_Ingredientes">Selecciona los ingredientes con los que <br /> sueles contar, para brindarte la mejor <br /> experiencia</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-
     <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan auctor pharetra. Fusce porttitor elit quis luctus convallis. Maecenas id mattis quam, non ultrices lorem. Suspendisse interdum ligula vitae turpis pharetra aliquam. Integer sit amet fringilla ligula.</string>
+
+    <!-- Ingredientes-->
+    <string name="carne">Carne</string>
+    <string name="frutas">Frutas</string>
+    <string name="vegetales">Vegetales</string>
+    <string name="especias">Especias</string>
+    <string name="picante">Picante</string>
+    <string name="huevos">Huevos</string>
+
 </resources>

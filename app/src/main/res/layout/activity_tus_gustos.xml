@@ -48,7 +48,7 @@
             android:orientation="vertical">
 
             <ImageView
-
+                android:id="@+id/img_carne"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_gravity="center_horizontal"
@@ -56,10 +56,11 @@
                 android:src="@drawable/icon_carne" />
 
             <TextView
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/cocogoose"
-                android:text="Carne"
+                android:text="@string/carne"
                 android:textAlignment="center"
                 android:textColor="@color/green"
                 android:textSize="25sp" />
@@ -72,6 +73,7 @@
             android:orientation="vertical">
 
             <ImageView
+                android:id="@+id/img_frutas"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_gravity="center_horizontal"
@@ -82,7 +84,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/cocogoose"
-                android:text="Frutas"
+                android:text="@string/frutas"
                 android:textAlignment="center"
                 android:textColor="@color/green"
                 android:textSize="25sp" />
@@ -95,6 +97,7 @@
             android:orientation="vertical">
 
             <ImageView
+                android:id="@+id/img_vegetales"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_gravity="center_horizontal"
@@ -105,7 +108,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/cocogoose"
-                android:text="Vegetales"
+                android:text="@string/vegetales"
                 android:textAlignment="center"
                 android:textColor="@color/green"
                 android:textSize="25sp" />
@@ -118,6 +121,7 @@
             android:orientation="vertical">
 
             <ImageView
+                android:id="@+id/img_especias"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_gravity="center_horizontal"
@@ -128,7 +132,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/cocogoose"
-                android:text="Especias"
+                android:text="@string/especias"
                 android:textAlignment="center"
                 android:textColor="@color/green"
                 android:textSize="25sp" />
@@ -141,6 +145,7 @@
             android:orientation="vertical">
 
             <ImageView
+                android:id="@+id/img_huevos"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_gravity="center_horizontal"
@@ -151,7 +156,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/cocogoose"
-                android:text="Huevos"
+                android:text="@string/huevos"
                 android:textAlignment="center"
                 android:textColor="@color/green"
                 android:textSize="25sp" />
@@ -164,6 +169,7 @@
             android:orientation="vertical">
 
             <ImageView
+                android:id="@+id/img_picante"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_gravity="center_horizontal"
@@ -174,7 +180,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/cocogoose"
-                android:text="Picante"
+                android:text="@string/picante"
                 android:textAlignment="center"
                 android:textColor="@color/green"
                 android:textSize="25sp" />
@@ -190,9 +196,9 @@
         android:background="@drawable/borde_redondos_naranja"
         android:drawableRight="@drawable/ic_baseline_play_arrow_24"
         android:drawablePadding="0dp"
-        android:fontFamily="sans-serif-black"
+        android:fontFamily="@font/cocogoose"
         android:text="Listo"
-        android:textSize="25sp"
+        android:textSize="20sp"
         android:textColor="@color/white"
         android:textAllCaps="false"
         android:id="@+id/btn_listo"/>

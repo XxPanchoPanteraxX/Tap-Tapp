@@ -4,6 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
+import equipo2.amarillo.taptapp.ui.dashboard.DashboardFragment
 
 class TusGustosActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,6 +18,8 @@ class TusGustosActivity : AppCompatActivity() {
             var intent: Intent = Intent(this, MainActivity::class.java)
             this.startActivity(intent)
         }
+
+        val img_carne = findViewById(R.id.img_carne) as ImageView
 
 
 
