@@ -37,14 +37,13 @@ class ChooseAccountActivity : AppCompatActivity() {
             .requestEmail()
             .build()
 
-        val account = GoogleSignIn.getLastSignedInAccount(this)
-        updateUI(account)
+        //val account = GoogleSignIn.getLastSignedInAccount(this)
+        //updateUI(account)
 
         // Build a GoogleSignInClient with the options specified by gso.
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
 
         var login_google = findViewById<View>(R.id.login_google) as SignInButton
-        val login_fb = findViewById(R.id.login_fb) as Button
 
         login_google.setOnClickListener {
 
@@ -61,10 +60,6 @@ class ChooseAccountActivity : AppCompatActivity() {
             startActivityForResult(googleClient.signInIntent, RC_SIGN_IN)
         }
 
-        login_fb.setOnClickListener {
-            val intent: Intent = Intent(this, TusGustosActivity::class.java)
-            this.startActivity(intent)
-        }
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -87,8 +82,11 @@ class ChooseAccountActivity : AppCompatActivity() {
                     FirebaseAuth.getInstance().signInWithCredential(credential)
                         .addOnCompleteListener {
 
-                            if (it.isSuccessful)
-                            this.startActivity(intent)
+                            if (it.isSuccessful) {
+                                this.startActivity(intent)
+                            }else{
+
+                            }
                         }
                 }
 
@@ -102,8 +100,6 @@ class ChooseAccountActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
 
-        // Check for existing Google Sign In account, if the user is already signed in
-// the GoogleSignInAccount will be non-null.
         // Check for existing Google Sign In account, if the user is already signed in
 // the GoogleSignInAccount will be non-null.
         val account = GoogleSignIn.getLastSignedInAccount(this)
@@ -129,8 +125,6 @@ class ChooseAccountActivity : AppCompatActivity() {
             //Log.w(TAG, "signInResult:failed code=" + e.statusCode)
             updateUI(null)
         }
-
-
     }
 
     private fun updateUI(account: GoogleSignInAccount?) {
