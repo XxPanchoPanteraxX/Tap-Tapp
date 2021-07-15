@@ -20,8 +20,59 @@ class TusGustosActivity : AppCompatActivity() {
         }
 
         val img_carne = findViewById(R.id.img_carne) as ImageView
+        val img_frutas = findViewById(R.id.img_frutas) as ImageView
+        val img_vegetales = findViewById(R.id.img_vegetales) as ImageView
+        val img_especias = findViewById(R.id.img_especias) as ImageView
+        val img_huevos = findViewById(R.id.img_huevos) as ImageView
+        val img_picante = findViewById(R.id.img_picante) as ImageView
 
+        img_carne.setOnClickListener {
+            if(img_carne.background==null) {
+                img_carne.setBackgroundResource(R.drawable.gradient)
+            }else{
+                img_carne.setBackgroundResource(R.drawable.transparente)
+            }
+        }
 
+        img_frutas.setOnClickListener {
+            if(img_frutas.background==null) {
+                img_frutas.setBackgroundResource(R.drawable.gradient)
+            }else{
+                img_frutas.setBackgroundResource(R.drawable.transparente)
+            }
+        }
+
+        img_vegetales.setOnClickListener {
+            if(img_vegetales.background==null) {
+                img_vegetales.setBackgroundResource(R.drawable.gradient)
+            }else{
+                img_vegetales.setBackgroundResource(R.drawable.transparente)
+            }
+        }
+
+        img_especias.setOnClickListener {
+            if(img_especias.background==null) {
+                img_especias.setBackgroundResource(R.drawable.gradient)
+            }else{
+                img_especias.setBackgroundResource(R.drawable.transparente)
+            }
+        }
+
+        img_huevos.setOnClickListener {
+            if(img_huevos.background==null) {
+                img_huevos.setBackgroundResource(R.drawable.gradient)
+            }else{
+                img_huevos.setBackgroundResource(R.drawable.transparente)
+            }
+        }
+
+        img_picante.setOnClickListener {
+            if(img_picante.background==null) {
+                img_picante.setBackgroundResource(R.drawable.gradient)
+            }else{
+                img_picante.setBackgroundResource(R.drawable.transparente)
+            }
+        }
 
     }
 }
