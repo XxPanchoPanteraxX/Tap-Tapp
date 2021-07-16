@@ -2,10 +2,7 @@ package equipo2.amarillo.taptapp
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
@@ -18,6 +15,7 @@ class LoginActivity : AppCompatActivity (){
         setContentView(R.layout.activity_welcome)
 
         auth = Firebase.auth
+
 
         val btn_registrarse: Button = findViewById(R.id.register_btn)
         val btn_contra: TextView = findViewById(R.id.contrasenia)
@@ -54,7 +52,10 @@ class LoginActivity : AppCompatActivity (){
                     // Sign in success, update UI with the signed-in user's information
                     //Log.d(TAG, "signInWithEmail:success")
                     val user = auth.currentUser
-
+                    val profilepicture: ImageView = findViewById(R.id.imageView)
+                    val name: TextView = findViewById(R.id.nombre)
+                    profilepicture.setImageURI(user?.photoUrl)
+                    name.setText(user?.displayName)
                     val intent: Intent = Intent(this, MainActivity::class.java)
                     startActivity(intent)
                     //updateUI(user)
