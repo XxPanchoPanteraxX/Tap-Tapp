@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
@@ -53,6 +54,7 @@ class RegisterActivity : AppCompatActivity() {
                     // Sign in success, update UI with the signed-in user's information
                     //Log.d(TAG, "createUserWithEmail:success")
                     val user = auth.currentUser
+
 
                     Toast.makeText(baseContext, "Se ha creado correctamente.",
                         Toast.LENGTH_SHORT).show()
