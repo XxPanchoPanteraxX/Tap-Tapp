@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/navigation_explora"
-        android:name="equipo2.amarillo.taptapp.ui."
+        android:name="equipo2.amarillo.taptapp.ui.recetas.fragment_recetas"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_explora" />
 </navigation>

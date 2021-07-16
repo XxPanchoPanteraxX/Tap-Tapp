@@ -31,7 +31,8 @@
         android:fontFamily="sans-serif-black"
         android:text="Pizza clasica"
         android:textColor="@color/greenish"
-        android:textSize="25dp" />
+        android:textSize="25dp"
+        android:id="@+id/titulo"/>
 
     <View
         android:layout_width="200dp"
@@ -88,6 +89,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginLeft="50dp"
+        android:id="@+id/paso1"
         android:text="@string/lorem_ipsum" />
 
     <TextView
@@ -106,6 +108,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginLeft="50dp"
+        android:id="@+id/paso2"
         android:text="@string/lorem_ipsum" />
 
     <TextView
@@ -124,6 +127,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginLeft="50dp"
+        android:id="@+id/paso3"
         android:text="@string/lorem_ipsum" />
 
 </LinearLayout>
