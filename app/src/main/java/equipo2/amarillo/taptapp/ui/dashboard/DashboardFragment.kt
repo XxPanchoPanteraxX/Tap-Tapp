@@ -155,7 +155,14 @@ class DashboardFragment : Fragment() {
             transaction?.commit()
         }
         btn_vegetariano.setOnClickListener {
+            receta2_img.setImageResource(R.drawable.ensalada)
+            receta3_img.setImageResource(R.drawable.pasta)
+        }
 
+        btn_vegano.setOnClickListener {
+            receta2_img.setImageResource(R.drawable.ensalada)
+            receta3_img.setImageResource(R.drawable.hamburguesa_vegana)
+            receta1_img.setImageResource(R.drawable.pan_vegano)
         }
 
         return root
