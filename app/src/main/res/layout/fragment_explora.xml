@@ -82,13 +82,18 @@
                 android:contentDescription="@string/mexicana"
                 android:foreground="@drawable/imagen_ovalada"
                 android:outlineProvider="background"
-                android:text=""
+                android:text="Postres"
+                android:textColor="@color/white"
                 android:scaleType="centerCrop"
                 android:src="@drawable/gradient_verde"
-                android:textAlignment="gravity"
-                android:textDirection="locale" />
+                android:textAlignment="center"
+                android:fontFamily="@font/cocogoose"
+                android:textDirection="locale"
+                android:textSize="20dp"
+                android:gravity="center"
+                />
 
-            <ImageButton
+            <TextView
                 android:layout_width="250dp"
                 android:layout_height="100dp"
                 android:layout_gravity="center"
@@ -99,7 +104,14 @@
                 android:scaleType="centerCrop"
                 android:background="@drawable/amasar"
                 android:src="@drawable/gradient_verde"
+                android:text="Aprende"
+                android:textColor="@color/white"
 
+                android:textAlignment="center"
+                android:fontFamily="@font/cocogoose"
+                android:textDirection="locale"
+                android:textSize="20dp"
+                android:gravity="center"
                 />
 
             <TextView

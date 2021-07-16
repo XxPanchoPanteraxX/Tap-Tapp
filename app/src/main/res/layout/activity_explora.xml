@@ -64,21 +64,36 @@
                 android:outlineProvider="background"
                 android:scaleType="centerCrop"
                 android:src="@drawable/vegano"
+                android:gravity="center"
+                android:text="Dietas"
+                android:textAlignment="center"
+                android:fontFamily="@font/cocogoose"
+                android:textSize="20dp"
                 />
 
-            <ImageButton
+            <TextView
+                android:id="@+id/mexicana"
                 android:layout_width="250dp"
                 android:layout_height="100dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="60dp"
                 android:adjustViewBounds="true"
+                android:background="@drawable/pastel"
+                android:contentDescription="@string/mexicana"
                 android:foreground="@drawable/imagen_ovalada"
                 android:outlineProvider="background"
+                android:text="Postres"
+                android:textColor="@color/white"
                 android:scaleType="centerCrop"
                 android:src="@drawable/gradient_verde"
-                android:background="@drawable/pastel"/>
+                android:textAlignment="center"
+                android:fontFamily="@font/cocogoose"
+                android:textDirection="locale"
+                android:textSize="20dp"
+                android:gravity="center"
+                />
 
-            <ImageButton
+            <TextView
                 android:layout_width="250dp"
                 android:layout_height="100dp"
                 android:layout_gravity="center"
@@ -88,7 +103,16 @@
                 android:outlineProvider="background"
                 android:scaleType="centerCrop"
                 android:background="@drawable/amasar"
-                android:src="@drawable/gradient_verde" />
+                android:src="@drawable/gradient_verde"
+                android:text="Aprende"
+                android:textColor="@color/white"
+
+                android:textAlignment="center"
+                android:fontFamily="@font/cocogoose"
+                android:textDirection="locale"
+                android:textSize="20dp"
+                android:gravity="center"
+                />
 
             <TextView
                 android:layout_width="match_parent"
