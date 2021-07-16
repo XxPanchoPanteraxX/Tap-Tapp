@@ -84,6 +84,76 @@ class DashboardFragment : Fragment() {
             transaction?.disallowAddToBackStack()
             transaction?.commit()
         }
+        receta2_img.setOnClickListener {
+            val transaction = activity?.supportFragmentManager?.beginTransaction()
+            val recetaBrocheta = db.collection("recetas")
+            val query = recetaBrocheta.whereEqualTo("nombre","Brocheta")
+            var pizza = query.get().addOnSuccessListener { documents ->
+                for (document in documents) {
+                    Log.d(TAG, "${document.id} => ${document.data}")
+                }
+            }
+                .addOnFailureListener { exception ->
+                    Log.w(TAG, "Error getting documents: ", exception)
+                }
+
+            var result = pizza.result
+            var lista=result?.documents
+            var receta=lista?.get(0)
+
+            var bundle:Bundle = Bundle()
+            bundle.putString("nombre",receta?.get("nombre").toString())
+            bundle.putString("paso1",receta?.get("Paso1").toString())
+            bundle.putString("paso2",receta?.get("Paso2").toString())
+            bundle.putString("paso3",receta?.get("Paso3").toString())
+            bundle.putBoolean("carne",receta?.get("carne") as Boolean)
+            bundle.putBoolean("pollo",receta?.get("pollo") as Boolean)
+
+
+            val fragmentoReceta = fragment_recetas()
+
+            fragmentoReceta.arguments = bundle
+
+
+            transaction?.replace(R.id.navigation_dashboard,fragment_recetas())
+            transaction?.disallowAddToBackStack()
+            transaction?.commit()
+        }
+        receta3_img.setOnClickListener {
+            val transaction = activity?.supportFragmentManager?.beginTransaction()
+            val recetaBrocheta = db.collection("recetas")
+            val query = recetaBrocheta.whereEqualTo("nombre","Pastel")
+            var pizza = query.get().addOnSuccessListener { documents ->
+                for (document in documents) {
+                    Log.d(TAG, "${document.id} => ${document.data}")
+                }
+            }
+                .addOnFailureListener { exception ->
+                    Log.w(TAG, "Error getting documents: ", exception)
+                }
+
+            var result = pizza.result
+            var lista=result?.documents
+            var receta=lista?.get(0)
+
+            var bundle:Bundle = Bundle()
+            bundle.putString("nombre",receta?.get("nombre").toString())
+            bundle.putString("paso1",receta?.get("Paso1").toString())
+            bundle.putString("paso2",receta?.get("Paso2").toString())
+            bundle.putString("paso3",receta?.get("Paso3").toString())
+            bundle.putBoolean("huevos",receta?.get("huevo") as Boolean)
+            bundle.putBoolean("verduras",receta?.get("pollo") as Boolean)
+
+
+            val fragmentoReceta = fragment_recetas()
+
+            fragmentoReceta.arguments = bundle
+
+
+            transaction?.replace(R.id.navigation_dashboard,fragment_recetas())
+            transaction?.disallowAddToBackStack()
+            transaction?.commit()
+        }
 
         return root
     }
