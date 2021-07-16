@@ -43,6 +43,7 @@
                 app:cardCornerRadius="60dp">
 
                 <ImageView
+                    android:id="@+id/receta1_img"
                     android:layout_width="250dp"
                     android:layout_height="100dp"
                     android:scaleType="fitXY"
@@ -60,6 +61,7 @@
                 app:cardCornerRadius="60dp">
 
                 <ImageView
+                    android:id="@+id/receta2_img"
                     android:layout_width="250dp"
                     android:layout_height="100dp"
                     android:adjustViewBounds="true"
@@ -79,6 +81,7 @@
                 app:cardCornerRadius="60dp">
 
                 <ImageView
+                    android:id="@+id/receta3_img"
                     android:layout_width="250dp"
                     android:layout_height="100dp"
                     android:layout_gravity="center"
@@ -121,6 +124,7 @@
                     app:cardCornerRadius="30dp">
 
                     <ImageButton
+                        android:id="@+id/vegetariano_btn"
                         android:layout_width="150dp"
                         android:layout_height="180dp"
                         android:src="@drawable/vegetariano" />
@@ -137,6 +141,7 @@
                     app:cardCornerRadius="30dp">
 
                     <ImageButton
+                        android:id="@+id/vegano_btn"
                         android:layout_width="150dp"
                         android:layout_height="180dp"
                         android:backgroundTint="@color/cremita"
