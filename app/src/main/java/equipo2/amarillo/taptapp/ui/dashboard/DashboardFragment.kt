@@ -154,6 +154,9 @@ class DashboardFragment : Fragment() {
             transaction?.disallowAddToBackStack()
             transaction?.commit()
         }
+        btn_vegetariano.setOnClickListener {
+
+        }
 
         return root
     }
