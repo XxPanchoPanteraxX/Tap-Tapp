@@ -34,7 +34,10 @@ class DashboardFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val db=Firebase.firestore
+        val db = Firebase.firestore
+        var comida1: String = "Pizza"
+        var comida2: String = "Brocheta"
+        var comida3: String = "Pastel"
 
         dashboardViewModel =
             ViewModelProvider(this).get(DashboardViewModel::class.java)
@@ -51,7 +54,7 @@ class DashboardFragment : Fragment() {
         receta1_img.setOnClickListener {
             val transaction = activity?.supportFragmentManager?.beginTransaction()
             val recetaPizza = db.collection("recetas")
-            val query = recetaPizza.whereEqualTo("nombre","Pizza")
+            val query = recetaPizza.whereEqualTo("nombre", comida1)
             var pizza = query.get().addOnSuccessListener { documents ->
                 for (document in documents) {
                     Log.d(TAG, "${document.id} => ${document.data}")
@@ -62,17 +65,14 @@ class DashboardFragment : Fragment() {
                 }
 
             var result = pizza.result
-            var lista=result?.documents
-            var receta=lista?.get(0)
+            var lista = result?.documents
+            var receta = lista?.get(0)
 
-            var bundle:Bundle = Bundle()
-            bundle.putString("nombre",receta?.get("nombre").toString())
-            bundle.putString("paso1",receta?.get("Paso1").toString())
-            bundle.putString("paso2",receta?.get("Paso2").toString())
-            bundle.putString("paso3",receta?.get("Paso3").toString())
-            bundle.putBoolean("huevos",receta?.get("huevos") as Boolean)
-            bundle.putBoolean("vegetariano",receta?.get("vegetariano") as Boolean)
-            bundle.putBoolean("verduras",receta?.get("verduras") as Boolean)
+            var bundle: Bundle = Bundle()
+            bundle.putString("nombre", receta?.get("nombre").toString())
+            bundle.putString("paso1", receta?.get("Paso1").toString())
+            bundle.putString("paso2", receta?.get("Paso2").toString())
+            bundle.putString("paso3", receta?.get("Paso3").toString())
 
 
             val fragmentoReceta = fragment_recetas()
@@ -80,14 +80,14 @@ class DashboardFragment : Fragment() {
             fragmentoReceta.arguments = bundle
 
 
-            transaction?.replace(R.id.navigation_dashboard,fragment_recetas())
+            transaction?.replace(R.id.navigation_dashboard, fragment_recetas())
             transaction?.disallowAddToBackStack()
             transaction?.commit()
         }
         receta2_img.setOnClickListener {
             val transaction = activity?.supportFragmentManager?.beginTransaction()
             val recetaBrocheta = db.collection("recetas")
-            val query = recetaBrocheta.whereEqualTo("nombre","Brocheta")
+            val query = recetaBrocheta.whereEqualTo("nombre", comida2)
             var pizza = query.get().addOnSuccessListener { documents ->
                 for (document in documents) {
                     Log.d(TAG, "${document.id} => ${document.data}")
@@ -98,16 +98,14 @@ class DashboardFragment : Fragment() {
                 }
 
             var result = pizza.result
-            var lista=result?.documents
-            var receta=lista?.get(0)
+            var lista = result?.documents
+            var receta = lista?.get(0)
 
-            var bundle:Bundle = Bundle()
-            bundle.putString("nombre",receta?.get("nombre").toString())
-            bundle.putString("paso1",receta?.get("Paso1").toString())
-            bundle.putString("paso2",receta?.get("Paso2").toString())
-            bundle.putString("paso3",receta?.get("Paso3").toString())
-            bundle.putBoolean("carne",receta?.get("carne") as Boolean)
-            bundle.putBoolean("pollo",receta?.get("pollo") as Boolean)
+            var bundle: Bundle = Bundle()
+            bundle.putString("nombre", receta?.get("nombre").toString())
+            bundle.putString("paso1", receta?.get("Paso1").toString())
+            bundle.putString("paso2", receta?.get("Paso2").toString())
+            bundle.putString("paso3", receta?.get("Paso3").toString())
 
 
             val fragmentoReceta = fragment_recetas()
@@ -115,14 +113,14 @@ class DashboardFragment : Fragment() {
             fragmentoReceta.arguments = bundle
 
 
-            transaction?.replace(R.id.navigation_dashboard,fragment_recetas())
+            transaction?.replace(R.id.navigation_dashboard, fragment_recetas())
             transaction?.disallowAddToBackStack()
             transaction?.commit()
         }
         receta3_img.setOnClickListener {
             val transaction = activity?.supportFragmentManager?.beginTransaction()
             val recetaBrocheta = db.collection("recetas")
-            val query = recetaBrocheta.whereEqualTo("nombre","Pastel")
+            val query = recetaBrocheta.whereEqualTo("nombre", comida3)
             var pizza = query.get().addOnSuccessListener { documents ->
                 for (document in documents) {
                     Log.d(TAG, "${document.id} => ${document.data}")
@@ -133,16 +131,14 @@ class DashboardFragment : Fragment() {
                 }
 
             var result = pizza.result
-            var lista=result?.documents
-            var receta=lista?.get(0)
+            var lista = result?.documents
+            var receta = lista?.get(0)
 
-            var bundle:Bundle = Bundle()
-            bundle.putString("nombre",receta?.get("nombre").toString())
-            bundle.putString("paso1",receta?.get("Paso1").toString())
-            bundle.putString("paso2",receta?.get("Paso2").toString())
-            bundle.putString("paso3",receta?.get("Paso3").toString())
-            bundle.putBoolean("huevos",receta?.get("huevo") as Boolean)
-            bundle.putBoolean("verduras",receta?.get("pollo") as Boolean)
+            var bundle: Bundle = Bundle()
+            bundle.putString("nombre", receta?.get("nombre").toString())
+            bundle.putString("paso1", receta?.get("Paso1").toString())
+            bundle.putString("paso2", receta?.get("Paso2").toString())
+            bundle.putString("paso3", receta?.get("Paso3").toString())
 
 
             val fragmentoReceta = fragment_recetas()
@@ -150,20 +146,25 @@ class DashboardFragment : Fragment() {
             fragmentoReceta.arguments = bundle
 
 
-            transaction?.replace(R.id.navigation_dashboard,fragment_recetas())
+            transaction?.replace(R.id.navigation_dashboard, fragment_recetas())
             transaction?.disallowAddToBackStack()
             transaction?.commit()
         }
         btn_vegetariano.setOnClickListener {
             receta2_img.setImageResource(R.drawable.ensalada)
+            comida2 = "Ensalada"
             receta3_img.setImageResource(R.drawable.pasta)
+            comida3="Pasta"
         }
-
         btn_vegano.setOnClickListener {
             receta2_img.setImageResource(R.drawable.ensalada)
+            comida2="Ensalada"
             receta3_img.setImageResource(R.drawable.hamburguesa_vegana)
+            comida3="Hamburguesa Vegana"
             receta1_img.setImageResource(R.drawable.pan_vegano)
+            comida1="Pan Vegano"
         }
+
 
         return root
     }
