@@ -209,9 +209,7 @@
                 android:layout_gravity="bottom"
                 android:layout_weight="1"
                 android:background="@color/orange"
-                app:menu="@menu/bottom_nav_menu"
-
-                app:navGraph="@navigation/mobile_navigation" />
+                />
 
 
 
